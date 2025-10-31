@@ -1,0 +1,29 @@
+# 🚀 Desafio AWS EC2 - DIO
+
+## 🧩 Descrição
+Este repositório foi criado para documentar o desafio prático de **gerenciamento de instâncias Amazon EC2** proposto pela **DIO (Digital Innovation One)**.  
+O objetivo é aplicar na prática os conceitos aprendidos sobre computação em nuvem, infraestrutura e automação com AWS.
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+- Aplicar conceitos de **EC2 e infraestrutura na nuvem**;  
+- **Documentar tecnicamente** o processo de forma organizada;  
+- Utilizar o **GitHub** como ferramenta de estudo e portfólio técnico.
+
+---
+
+## ⚙️ Etapas Realizadas
+
+### 1. Criação da Instância EC2
+- Tipo de instância: `t2.micro` (Free Tier elegível)  
+- Sistema operacional: `Amazon Linux 2`  
+- Par de chaves SSH criado: `ec2-key.pem`  
+- Grupo de segurança configurado permitindo:
+  - Porta 22 (SSH)
+  - Porta 80 (HTTP)
+
+### 2. Conexão via SSH
+Comando utilizado para acessar a instância:
+```bash
+ssh -i "ec2-key.pem" ec2-user@<IP-público-da-instância>
