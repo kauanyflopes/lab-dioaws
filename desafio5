@@ -1,0 +1,38 @@
+# ☁️ Desafio AWS CloudFormation - DIO
+
+## 🧩 Descrição
+Este repositório foi criado como parte do desafio prático da **Digital Innovation One (DIO)**:  
+**“Implementando sua Primeira Stack com AWS CloudFormation”**.  
+
+O objetivo é aplicar, na prática, os conceitos aprendidos sobre **Infraestrutura como Código (IaC)**, criando uma stack na AWS de forma automatizada e documentando todas as etapas do processo.
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+- Entender o funcionamento do **AWS CloudFormation**;  
+- Criar e gerenciar stacks usando **templates YAML ou JSON**;  
+- Automatizar a criação de recursos AWS;  
+- Documentar o processo técnico de forma clara e organizada;  
+- Utilizar o **GitHub** para compartilhar documentação técnica e experiências práticas.
+
+---
+
+## ⚙️ Etapas Realizadas
+
+### 1. Criação do Template
+O template CloudFormation define os recursos que serão provisionados automaticamente.  
+Neste laboratório, foi criado um arquivo chamado `template.yaml` com a estrutura base:
+
+```yaml
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Minha primeira stack com AWS CloudFormation - DIO"
+
+Resources:
+  MinhaInstanciaEC2:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: ami-0c55b159cbfafe1f0 # Exemplo de AMI (Amazon Linux 2)
+      InstanceType: t2.micro
+      Tags:
+        - Key: "Name"
+          Value: "MinhaPrimeiraInstanciaCFN"
