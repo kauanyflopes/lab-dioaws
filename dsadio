@@ -1,0 +1,43 @@
+# 🚀 Desafio AWS Step Functions - DIO
+
+## 🧩 Descrição
+Este repositório foi criado como parte do desafio prático da **Digital Innovation One (DIO)** sobre **automação de workflows com AWS Step Functions**.  
+O objetivo é aplicar os conceitos aprendidos nas aulas e demonstrar, na prática, o uso de **orquestração de serviços AWS** por meio de fluxos automatizados.
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+- Aplicar conceitos de **automação e orquestração** com AWS Step Functions;  
+- Criar **workflows serverless** integrando múltiplos serviços AWS;  
+- Documentar o processo técnico de forma clara e estruturada;  
+- Utilizar o **GitHub** como ferramenta de compartilhamento e portfólio técnico.
+
+---
+
+## ⚙️ Etapas Realizadas
+
+### 1. Criação do Workflow no AWS Step Functions
+- Serviço acessado: **AWS Step Functions Console**
+- Tipo de máquina de estado: **Standard**
+- Linguagem utilizada: **Amazon States Language (JSON)**
+- Integrações configuradas (exemplo):
+  - **AWS Lambda** → para execução de funções automatizadas;
+  - **SNS/SQS** → para envio e recebimento de mensagens;
+  - **DynamoDB** → para gravação e leitura de dados.
+
+Exemplo de definição básica (em JSON):
+```json
+{
+  "Comment": "Exemplo de workflow com AWS Step Functions",
+  "StartAt": "TarefaLambda",
+  "States": {
+    "TarefaLambda": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:REGIAO:ID:function:MinhaFuncao",
+      "Next": "Sucesso"
+    },
+    "Sucesso": {
+      "Type": "Succeed"
+    }
+  }
+}
