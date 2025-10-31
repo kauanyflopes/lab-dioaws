@@ -1,0 +1,50 @@
+# Automatizando Tarefas com AWS Lambda e S3
+
+Este projeto descreve a implementação de tarefas automatizadas utilizando **AWS Lambda** e **S3**, consolidando os conhecimentos adquiridos durante o laboratório da DIO.
+
+---
+
+## Objetivos do Projeto
+
+- Automatizar tarefas no S3 usando Lambda.
+- Documentar processos técnicos detalhadamente.
+- Praticar organização e comunicação de conhecimento no GitHub.
+
+---
+
+## Conceitos Aplicados
+
+- **Lambda Function**: Função executada automaticamente na AWS em resposta a eventos, como upload de arquivos em um bucket S3.
+- **S3 Bucket**: Armazenamento na nuvem da AWS para objetos e arquivos.
+- **Trigger do S3**: Configuração que dispara a execução da função Lambda sempre que um novo arquivo é adicionado ao bucket.
+
+---
+
+## Passo a Passo Documentado
+
+1. **Criação do Bucket S3**  
+   Expliquei como criar um bucket S3 usando a AWS Console e o AWS CLI, destacando a importância de definir permissões e políticas corretas para segurança e acesso.
+
+2. **Desenvolvimento da Função Lambda**  
+   Descrevi o código em Python para processar objetos do S3, incluindo como a função lê informações do arquivo, processa dados e gera logs.  
+   Além disso, destaquei boas práticas, como tratamento de erros e organização de código.
+
+3. **Configuração do Trigger do S3**  
+   Expliquei como configurar o bucket para disparar a função Lambda automaticamente ao receber novos arquivos, garantindo automação total do processo.
+
+4. **Testes e Validação**  
+   Relatei os testes feitos, como envio de arquivos de exemplo e monitoramento dos logs no CloudWatch, e documentei problemas encontrados e soluções aplicadas.
+
+5. **Aprendizados e Insights**  
+   - Compreensão sobre integração Lambda e S3.  
+   - Importância de automação para reduzir tarefas manuais repetitivas.  
+   - Valorização da documentação clara e estruturada para replicabilidade do projeto.
+
+---
+
+## Conclusão
+
+A documentação escrita permite não apenas registrar o que foi feito, mas também consolidar os conceitos aprendidos. Com este projeto, adquiri experiência prática em **automatização na AWS** e em **documentação técnica de processos**.
+
+---
+
